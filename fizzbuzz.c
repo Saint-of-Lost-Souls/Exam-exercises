@@ -12,8 +12,7 @@ void	ft_write_number(int num)
 	write(1, &c, 1);
 }
 int main()
-{
-    
+{    
     int num = 1;
     
     while (num <= 100)
