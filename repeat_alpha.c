@@ -11,28 +11,28 @@ Case remains unchanged. */
    
 #include <unistd.h>
 
-int		main(int ac, char **av)
+int		main(int argc, char **argv)
 {
 	int i;
 	int count;
 
 	i = 0;
 	count = 0;
-	if (ac == 2)
+	if (argc == 2)
 	{
-		while (av[1][i] != '\0')
+		while (argv[1][i] != '\0')
 		{
-			if (av[1][i] >= 'A' && av[1][i] <= 'Z')
+			if (argv[1][i] >= 'A' && argv[1][i] <= 'Z')
             {
-			  	count = av[1][i] - 64;
+			  	count = argv[1][i] - 64;
             }
-			else if (av[1][i] >= 'a' && av[1][i] <= 'z')
+			else if (argv[1][i] >= 'a' && argv[1][i] <= 'z')
             {
-				count = av[1][i] - 96;
+				count = argv[1][i] - 96;
             }
 			while (count)
 			{
-				write(1, &av[1][i], 1);
+				write(1, &argv[1][i], 1);
 				count--;
 			}
 			count = 1;
