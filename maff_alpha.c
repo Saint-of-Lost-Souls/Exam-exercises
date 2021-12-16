@@ -2,8 +2,9 @@
 
 void    ft_maff_alpha(char c)
 {   
-    int count;            
-    
+    int count;
+
+    count = 1;            
     while(c <= 'z')    
     {        
         if(count % 2 == 0)

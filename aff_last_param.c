@@ -9,7 +9,11 @@ int		main(int argc, char **argv)
 	int i;
 
 	i = 0;
-	if (argc > 1)
+	if (argc == 0)
+	{
+		write(1, "\n", 1);
+	}
+	else
 	{
 		argc--;
 		while (argv[argc][i])

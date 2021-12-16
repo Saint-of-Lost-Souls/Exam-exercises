@@ -2,8 +2,9 @@
 
 void    ft_maff_revalpha(char c)
 {   
-    int count;            
-    
+    int count;
+
+    count = 1;   
     while(c >= 'a')    
     {        
         if(count % 2 == 0)
