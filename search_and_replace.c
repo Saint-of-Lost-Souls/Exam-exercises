@@ -16,7 +16,7 @@ int		main(int argc, char **argv)
 	i = 0;
 	if (argc == 4)
 	{
-		while (argv[1][i] != '\0')
+		while (argv[1][i])
 		{			
 			if (argv[2][1] == '\0' && argv[3][1] == '\0')
 			{
